@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'justSaid_web',
-    'members'
+    'members',
+    'ckeditor'
 ]
 
 MIDDLEWARE = [
