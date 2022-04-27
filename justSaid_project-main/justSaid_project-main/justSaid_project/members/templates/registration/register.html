@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static%}
+{% block title %}Login{% endblock %}
+
+
+{% block content %}
+
+<div class="container-login100">
+    <div class="form-group wrap-login100">
+        
+        <div class="login100-pic" data-tilt>
+            <img src="{% static 'image/F6F625AA-4933-4F72-A728-648D4F52D567.png' %}" alt="IMG">
+        </div>
+
+        <form method="POST" class="login100-form validate-form">
+            <span class="login100-form-title">
+                Register
+            </span>
+
+            {% csrf_token %}
+            {{ form.as_p }}
+            
+            <div class="container-login100-form-btn ">
+                <button class="login100-form-btn w3-margin-bottom">
+                    register
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+{% endblock %}
